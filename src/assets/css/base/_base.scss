@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: $font;
+    @media (min-width:700px) {
+        width: 700px;
+        margin: 0 auto;
+        border:  1px solid $main-color;
+        overflow: hidden;
+    }
+}
+
+#TopCover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999;
+    transform: translate(0%, 0%);
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 1s;
+
+    .container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+    }
+    
+    &.active{
+        transition: all 0s;
+        background-color: $main-color;
+        opacity: 1;
+    }
+
+
+    .canvas{
+        width: 5%;
+        height: 100%;
+        background-color: #fff;
+    }
+    @media (min-width:700px) {
+        width: 700px;
+        margin: 0 auto;
+    }
+    &.top .container{
+        animation: WrapperUp .6s forwards linear;
+    }
+    &.down .container{
+        animation: WrapperDown .6s forwards linear;
+    }
+
+
+    @keyframes WrapperDown {
+        0%{
+            bottom:100%;
+        }
+        100%{
+            bottom: 0;
+        }
+    }
+    
+
+    @keyframes WrapperUp {
+        0%{
+            top:100%;
+        }
+        100%{
+            top: 0;
+        }
+    }
+}
+
+#DownCover{
+    z-index: 99999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    transform: translate(0 , 100%);
+    transition: all .8s;
+    display: flex;
+    .canvas{
+        width: 5%;
+        height: 100%;
+        background-color: $main-color;
+    }
+    @media (min-width:700px) {
+        width: 700px;
+        margin: 0 auto;
+    }
+    &.down{
+        transform: translate(0 , 0%);
+    }
+}
+
+#app{
+    >div{
+        >div:nth-child(2){
+            opacity: 1;
+            &.opactiy{
+                opacity: 0;
+            }
+        }
+    }
+}

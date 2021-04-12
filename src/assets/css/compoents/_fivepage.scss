@@ -1,0 +1,191 @@
+#fivepage{
+    padding-top: 10px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    .page{
+        display: flex;
+        height: 100%;
+        @media (max-width:365px) {
+            height: 90%;
+        }
+        .l{
+            position: relative;
+            width: 85%;
+            .banner{
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translate(25% , 10%);
+                z-index: 10;
+                img{
+                    height:130px;
+                    width: 180px;
+                    border-radius: 50%;
+                    border: 5px white solid;
+                    @media (max-width:365px) {
+                        height: 90px;
+                        width: 110px;
+                    }
+                }
+            }
+            .top{
+                color: $main-color;
+            }
+            >.content{
+                overflow: hidden;
+                padding: 20px 20px;
+                height: 75%;
+                color: $main-color;
+                @media (max-width:365px) {
+                    height: 70%;
+                }
+                .sub{
+                    display: inline-block;
+                    font-size: 3vmin;
+                    @media (min-width:700px) {
+                        font-size: 16px;
+                    }
+                }
+                >.container-l{
+                    font-size: 3vmin;
+                    transition: 1s all;
+                    height: 0;
+                    @media (min-width:700px) {
+                        width: 150px;
+                        font-size: 16px;
+                        margin-right: 50px;
+                    }
+                    &.active{
+                        height: 90%;
+                        border-right:  2px solid rgba(21, 150, 255, 0.431);
+                        //邊線設置高度後無法跟隨p的數量
+                        @media (max-width:365px) {
+                            height: 100%;
+                        }
+                    }
+                    p{
+                        margin-right: 10px;
+                        @media (max-width:365px) {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                >.container-r{
+                    p{
+                        margin-left: 10px;
+                        @media (max-width:365px) {
+                            margin-left: 9px;
+                        }
+                    }
+
+                }
+
+            }
+            .canvas{
+                width: 100%;
+                height: 15%;
+                background-color: #1478BF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >.content{
+                    width: 100%;
+                    color: white;
+                    margin: 15px 0px 15px 15px;
+                    padding: 15px 0px 15px 15px;
+                    border: 1px solid white;
+
+                    @media (max-width:365px) {
+                        padding: 5px 0 5px 5px;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                    p:nth-child(1){
+                        font-size: 14px;
+                    }
+                    p:nth-child(2){
+                        font-size: 20px;
+                        font-weight: bolder;               
+                    }
+                }
+            }
+            >.bottom{
+                background-color: $main-color;
+                width: 80%;
+                height: 10px;
+            }
+        }
+        .r{
+            width: 15%;
+            // writing-mode: vertical-lr;
+            background-color: #1478BF;
+            span{
+                color: white;
+                display: block;
+                writing-mode: vertical-lr;
+                margin: auto;
+                font-size: 8vmin;
+                font-weight: bolder;
+            }
+            span:nth-child(1){
+                height: 60%;
+                text-align: end;
+                margin-bottom: 10px;
+                @media (max-width:365px) {
+                    height: 54%;
+                }
+            }
+            span:nth-child(2){
+                color: rgba(255, 255, 255, 0.658);
+            }
+            // flex-grow: 1;
+
+        }
+
+    }
+
+    .bottom{
+        width: 80%;
+        color: $main-color;
+        > h3{
+            margin: 2px 0 ;
+        }
+        .content{
+            >h3{
+                margin: 0 0 3px 0;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            display: flex;
+            position: relative;
+            align-items: center;
+            .canvas{
+                transform: skew(-20deg);
+                margin-right: 10px;
+                background-color: #1478BF;
+                flex-grow: 1;
+                height: 10px;
+                h3{
+                    margin: 0px;
+                }
+                div{
+                    height: 10px;
+                    width:3px;
+                    position: absolute;
+                    top: 0;
+                }
+                @for $i from 0 through 4{
+                    div:nth-child(#{$i+1}){
+                        background-color: #ffffff;
+                        right:(($i+1)*10px);
+                    }
+                }
+            }
+        }
+    }
+
+}
