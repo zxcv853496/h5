@@ -8,7 +8,7 @@
     .page{
         display: flex;
         height: 100%;
-        @media (max-width:365px) {
+        @media (max-height:736px) {
             height: 90%;
         }
         .l{
@@ -25,7 +25,7 @@
                     width: 180px;
                     border-radius: 50%;
                     border: 5px white solid;
-                    @media (max-width:365px) {
+                    @media (max-height:736px) {
                         height: 90px;
                         width: 110px;
                     }
@@ -42,14 +42,31 @@
                 @media (max-width:365px) {
                     height: 70%;
                 }
+
                 >div{
                     margin-top: 10px;
+                    >.recaptcha-container{
+                        transform:scale(0.77);
+                        -webkit-transform:scale(0.77);
+                        transform-origin:0 0;
+                        -webkit-transform-origin:0 0;
+                        @media (max-width:320px) {
+                            transform:scale(0.70);
+                            -webkit-transform:scale(0.70);
+                            transform-origin:0 0;
+                            -webkit-transform-origin:0 0;
+                        }
+                    }
                     >input{
                         height: 40px;
                         margin: 10px 0;
-                        width: 100%;
+                        width: 99%;
                         box-sizing:border-box;
                         border: 1px solid $main-color;
+                        @media (max-width:320px) {
+                            height: 30px;
+
+                        }
                     }
                     >div{
                         margin: 10px 0;
@@ -99,7 +116,7 @@
                     margin: 15px 0px 15px 15px;
                     padding: 15px 0px 15px 15px;
                     border: 1px solid white;
-                    @media (max-width:365px) {
+                    @media (max-height:736px) {
                         padding: 5px 0 5px 5px;
                     }
                     p{
@@ -129,14 +146,17 @@
                 display: block;
                 writing-mode: vertical-lr;
                 margin: auto;
-                font-size: 8vmin;
+                font-size: 34px;
                 font-weight: bolder;
+                @media (max-height:736px) {
+                    font-size: 8vmin;
+                }
             }
             span:nth-child(1){
                 height: 60%;
                 text-align: end;
                 margin-bottom: 10px;
-                @media (max-width:365px) {
+                @media (max-height:736px) {
                     height: 54%;
                 }
             }

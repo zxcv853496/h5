@@ -20,19 +20,25 @@
                         :class="{'animate__animated animate__fadeInUp animate__delay__decimals-3s':active}">
                         <input name="phone" type="text" placeholder="手機"
                         :class="{'animate__animated animate__fadeInUp animate__delay__decimals-6s':active}">
-                        <div
-                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-12s':active}">
-                            <input type="text" placeholder="驗證碼">
-                            <button>驗證碼</button>
-                        </div>
                         <input name="email" type="text" placeholder="信箱"
-                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-15s ':active}">
+                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-9s ':active}">
+                        <div class="recaptcha-container">
+                            <div
+                                class="g-recaptcha"
+                                :class="{'animate__animated animate__fadeInUp animate__delay__decimals-12s ':active}"
+                                data-sitekey="6Lf6BakaAAAAAARjNiUzTxZW6tSWVT5U_FP3uLNc"
+                                data-theme="light" data-size="normal"
+                                data-callback="verify"
+                                data-expired-callback="expired"
+                                data-error-callback="error">
+                            </div>
+                        </div>  
                         <button
-                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-18s':active}">
+                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-15s':active}">
                             提交
                         </button>
                         <span
-                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-21s ':active}">
+                        :class="{'animate__animated animate__fadeInUp animate__delay__decimals-18s ':active}">
                             請留下您的聯繫方式，我們會盡快與您聯絡，謝謝!
                         </span>
                     </div>
@@ -63,7 +69,6 @@
 
 <script>
 export default {
-
     props:[
         'active'
     ],

@@ -37,7 +37,7 @@ body {
     }
     
     &.active{
-        transition: all 0s;
+        transition: all .3s;
         background-color: $main-color;
         opacity: 1;
     }
@@ -53,10 +53,10 @@ body {
         margin: 0 auto;
     }
     &.top .container{
-        animation: WrapperUp .6s forwards linear;
+        // animation: WrapperUp .6s forwards linear;
     }
     &.down .container{
-        animation: WrapperDown .6s forwards linear;
+        // animation: WrapperDown .6s forwards linear;
     }
 
 

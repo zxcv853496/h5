@@ -117,11 +117,14 @@ export default {
         //是否顯示導航，預設為false
         navigation: true,
         //頁面滾動速度
-        scrollingSpeed: 750,
+        scrollingSpeed: 1600,
         //動畫
         controlArrows: true,
+        loopBottom:true,
+        loopTop:true ,
         onLeave: this.move_up_down,
         afterLoad: this.move_up_down_after,
+
       },
       active:true,
       loading_active:true,

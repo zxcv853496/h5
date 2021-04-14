@@ -8,7 +8,7 @@
     .page{
         display: flex;
         height: 100%;
-        @media (max-width:365px) {
+        @media (max-height:736px) {
             height: 90%;
         }
         .l{
@@ -25,7 +25,7 @@
                     width: 180px;
                     border-radius: 50%;
                     border: 5px white solid;
-                    @media (max-width:365px) {
+                    @media (max-height:736px) {
                         height: 90px;
                         width: 110px;
                     }
@@ -62,13 +62,13 @@
                         height: 90%;
                         border-right:  2px solid rgba(21, 150, 255, 0.431);
                         //邊線設置高度後無法跟隨p的數量
-                        @media (max-width:365px) {
+                        @media (max-height:736px) {
                             height: 100%;
                         }
                     }
                     p{
                         margin-right: 10px;
-                        @media (max-width:365px) {
+                        @media (max-height:736px) {
                             margin-right: 5px;
                         }
                     }
@@ -76,7 +76,7 @@
                 >.container-r{
                     p{
                         margin-left: 10px;
-                        @media (max-width:365px) {
+                        @media (max-height:736px) {
                             margin-left: 9px;
                         }
                     }
@@ -98,7 +98,7 @@
                     padding: 15px 0px 15px 15px;
                     border: 1px solid white;
 
-                    @media (max-width:365px) {
+                    @media (max-height:736px) {
                         padding: 5px 0 5px 5px;
                     }
                     p{
@@ -128,14 +128,17 @@
                 display: block;
                 writing-mode: vertical-lr;
                 margin: auto;
-                font-size: 8vmin;
+                font-size: 34px;
                 font-weight: bolder;
+                @media (max-height:736px) {
+                    font-size: 8vmin;
+                }
             }
             span:nth-child(1){
                 height: 60%;
                 text-align: end;
                 margin-bottom: 10px;
-                @media (max-width:365px) {
+                @media (max-height:736px) {
                     height: 54%;
                 }
             }

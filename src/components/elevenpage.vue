@@ -15,6 +15,11 @@
                     </div>
                 </div>
                 <div class="content">
+                    <div class="top" :class="{'animate__animated animate__fadeInDown animate__delay-1s ':active}">
+                        <a href="https://www.google.com/maps/place/408%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%B1%AF%E5%8D%80%E7%B2%BE%E8%AA%A0%E8%B7%AF504-1%E8%99%9F/@24.143165,120.654838,17z/data=!4m2!3m1!1s0x34693da34c1bf6a7:0x59d9d157e682e3b6">
+                            立即前往
+                        </a>
+                    </div>
                     <div :class="{'animate__animated animate__zoomIn animate__delay-1s animate__slow':active}">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.813996951619!2d120.65268201536752!3d24.143169479574233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693df0ad32ee69%3A0xb27ba42ba48fc4a3!2z5rOz5qyj5bmz6Z2i6Kit6KiIIOe2sui3r-ihjOmKtw!5e0!3m2!1szh-TW!2stw!4v1618193787940!5m2!1szh-TW!2stw" 
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>

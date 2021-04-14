@@ -40,7 +40,7 @@
         padding-top: 35px;
         flex-grow: 1;
         margin: auto;
-        @media (max-width:365px) {
+        @media (max-height:736px) {
             padding-top: 10px;
         }
         .img{
@@ -82,7 +82,7 @@
                 display: flex;
                 flex-flow: column;
                 justify-content: center;
-                @media (max-width:365px) {
+                @media (max-height:736px) {
                     height: 52vw;
                     width: 52vw;
                 }
@@ -90,14 +90,14 @@
                 div:nth-child(1){
                     font-size: 32px;
                     font-weight: 900;
-                    @media (max-width:365px) {
+                    @media (max-height:736px) {
                         font-size: 25px;
                     }
                 }
                 div:nth-child(2){
                     font-size: 30px;
                     font-weight: 900;
-                    @media (max-width:365px) {
+                    @media (max-height:736px) {
                         font-size: 20px;
                     }
                 }
