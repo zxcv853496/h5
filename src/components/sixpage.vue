@@ -3,7 +3,7 @@
         <div class="page">
             <div class="l container" >
                 <div class="banner" :class="{'animate__animated animate__zoomIn':active}">
-                    <img  src="/img/GDC-4053.jpg" alt="">
+                    <img  src="/H5/1/img/GDC-4053.jpg" alt="">
                 </div>
                 <div class="top" :class="{'animate__animated animate__fadeInUp animate__slow':active}">
                     <div>合作 / 創新 / 共贏 / 發展 >></div>
@@ -60,24 +60,24 @@ export default {
             data:{
                 main:{
                     title: '全新SUV車型時尚年輕',
-                    img: '/img/car-1.jpg',
+                    img: '/H5/1/img/car-1.jpg',
                 },
                 sub:[
                     {
                         title: 'A3車型',
-                        img: '/img/car-2.jpg',
+                        img: '/H5/1/img/car-2.jpg',
                     },
                     {
                         title: 'A4車型',
-                        img: '/img/car-3.jpg',
+                        img: '/H5/1/img/car-3.jpg',
                     },
                     {
                         title: 'A8車型',
-                        img: '/img/car-4.jpg',
+                        img: '/H5/1/img/car-4.jpg',
                     },
                     {
                         title: 'A1車型',
-                        img: '/img/car-5.jpg',
+                        img: '/H5/1/img/car-5.jpg',
                     }
                 ]
             }

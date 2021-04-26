@@ -86,7 +86,6 @@
         <div class="section">
           <twelvepage :active='active'/>
         </div>
-<!-- AIzaSyCqgIFqTcK-S6CmMBuNJXRuOWEM8Ii1BtU -->
       </full-page>
     </div>
   </div>
@@ -124,7 +123,8 @@ export default {
         loopTop:true ,
         onLeave: this.move_up_down,
         afterLoad: this.move_up_down_after,
-
+        css3:false,
+        scrollBar:true
       },
       active:true,
       loading_active:true,
@@ -167,8 +167,6 @@ export default {
       else{
         this.lodaing_timeout = setTimeout(()=>{this.loading_active = false},1500)
       }
-
-      console.log(origin + destination)
 
       if (direction === 'down'){
         this.downcover = false

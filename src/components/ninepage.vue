@@ -3,7 +3,7 @@
         <div class="page">
             <div class="l container" >
                 <div class="banner" :class="{'animate__animated animate__zoomIn':active}">
-                    <img  src="/img/GDC-6043.jpg" alt="">
+                    <img  src="/H5/1/img/GDC-6043.jpg" alt="">
                 </div>
                 <div class="top" :class="{'animate__animated animate__fadeInUp animate__slow':active}">
                     <div>合作 / 創新 / 共贏 / 發展 >></div>
@@ -61,15 +61,15 @@ export default {
             data:{
                 top_banner:[
                     {
-                        img:'/img/GDC-7044.jpg'
+                        img:'/H5/1/img/GDC-7044.jpg'
                     },
                     {
-                        img:'/img/GDC-7067.jpg'
+                        img:'/H5/1/img/GDC-7067.jpg'
                     }
                 ],
                 bottom_banner:[
                     {
-                        img:'img/GDC-8001.jpg'
+                        img:'/H5/1/img/GDC-8001.jpg'
                     }
                 ]
             }

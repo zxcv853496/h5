@@ -3,7 +3,7 @@
         <div class="page">
             <div class="l container" >
                 <div class="banner" :class="{'animate__animated animate__zoomIn':active}">
-                    <img  src="/img/GDC-7044.jpg" alt="">
+                    <img  src="/H5/1/img/GDC-7044.jpg" alt="">
                 </div>
                 <div class="top" :class="{'animate__animated animate__fadeInUp animate__slow':active}">
                     <div>合作 / 創新 / 共贏 / 發展 >></div>
@@ -59,7 +59,7 @@ export default {
                 {
                     date:'2021年3月',
                     content: '榮獲好好棒市長獎',
-                    img: '/img/champion.jpg'
+                    img: '/H5/1/img/champion.jpg'
                 },
                 {
                     date:'2021年3月',

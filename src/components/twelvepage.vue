@@ -3,7 +3,7 @@
         <div class="page">
             <div class="l container" >
                 <div class="banner" :class="{'animate__animated animate__zoomIn':active}">
-                    <img  src="/img/GDC-3007.jpg" alt="">
+                    <img  src="/H5/1/img/GDC-3007.jpg" alt="">
                 </div>
                 <div class="top" :class="{'animate__animated animate__fadeInUp animate__slow':active}">
                     <div>合作 / 創新 / 共贏 / 發展 >></div>
@@ -32,7 +32,7 @@
                         <p>信箱: {{data.email}}</p>
                         <p>網址: https://www.yongxin-design.com/</p>
                     </div>
-                    <img :class="{'animate__animated animate__fadeInRight animate__delay__decimals-15s':active}" src="/img/QRcode.png" alt="">
+                    <img :class="{'animate__animated animate__fadeInRight animate__delay__decimals-15s':active}" src="/H5/1/img/QRcode.png" alt="">
                 </div>
                 <div class="bottom" :class="{'animate__animated animate__fadeInLeft ':active}"></div>
             </div>

@@ -15,7 +15,7 @@
       <div class="banner">
           <div class="img">
             <div class="test" :class="{'animate__animated animate__zoomIn animate__fast ':active}"></div>
-            <img :class="{'animate__animated animate__zoomIn ':active}" src="/img/GDC-3029.jpg" alt="">
+            <img :class="{'animate__animated animate__zoomIn ':active}" src="/H5/1/img/GDC-3029.jpg" alt="">
             <div class="title fade-right" :class="{'animate__animated animate__zoomIn':active}" >
                 <div :class="{'animate__animated animate__flipInX animate__slower ':active}">BUSINESS</div>
                 <div :class="{'animate__animated animate__flipInX animate__slower ':active}">企業宣傳冊</div>
